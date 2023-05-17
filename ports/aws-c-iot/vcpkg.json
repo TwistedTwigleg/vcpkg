@@ -1,0 +1,29 @@
+{
+    "name": "aws-c-iot",
+    "version": "0.1.11",
+    "description": "Handles C-level IoT work for AWS IoT SDKs.",
+    "homepage": "https://github.com/awslabs/aws-c-iot",
+    "license": "Apache-2.0",
+    "supports": "!(windows & arm) & !uwp",
+    "dependencies": [
+      "aws-c-cal",
+      "aws-c-common",
+      "aws-c-io",
+      "aws-c-compression",
+      "aws-c-http",
+      "aws-c-mqtt",
+      "aws-c-iot",
+      {
+        "name": "s2n",
+        "platform": "!uwp & !windows"
+      },
+      {
+        "name": "vcpkg-cmake",
+        "host": true
+      },
+      {
+        "name": "vcpkg-cmake-config",
+        "host": true
+      }
+    ]
+}
